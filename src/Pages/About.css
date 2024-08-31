@@ -1,0 +1,261 @@
+.about_section {
+  margin-top: 5rem;
+  width: 100%;
+  box-shadow: #fff 0px 0px 0px 3px;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card .card_bg {
+  flex: 0 0 auto;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  transition: all 1.1s;
+}
+.card .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/About/About_Card.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1.1s;
+}
+.card .card_bg:hover .bg {
+  transform: scale(1.2);
+}
+
+.card .card_text {
+  flex: 0 0 auto;
+  width: 50%;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card_text p {
+  font-size: 18px;
+  font-family: Roboto;
+  color: #403c3c;
+  font-weight: 300;
+  line-height: 24px;
+}
+.card .card_text .about_btn {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 10px 30px;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-style: italic;
+  font-family: Roboto;
+  color: #403c3c;
+  font-weight: 300;
+  line-height: 24px;
+  cursor: pointer;
+}
+.card .card_text .about_btn:hover {
+  color: #b31f1f;
+}
+.about_section_2 {
+  margin-top: 2rem;
+  background-image: url(../assets/About/Banner_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 280px;
+  position: relative;
+  font-family: Roboto;
+}
+.bg_overlay::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c0c;
+  opacity: 0.5;
+}
+.overlay_text {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+.banner_text_2 {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #fff;
+  z-index: 11;
+  text-align: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.banner_text_2 .icon {
+  font-size: 40px;
+  background-color: transparent;
+  color: #fff;
+  z-index: 11;
+}
+.banner_text_2 .name {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Roboto;
+}
+.banner_text_2 .number {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Roboto;
+}
+.banner_text_2:hover,
+.icon:hover {
+  color: #b31f1f;
+}
+@media screen and (max-width: 768px) {
+  .about_section {
+    height: 900px;
+  }
+  .card {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card .card_bg {
+    width: 100%;
+    height: 100%;
+  }
+  .card .card_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .overlay_text {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  .banner_text_2 .icon {
+    font-size: 32px;
+  }
+  .banner_text_2 .name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .banner_text_2 .number {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about_section {
+    height: 900px;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card .card_text p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 18px;
+  }
+
+  .banner_text_2 .icon {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .banner_text_2 .name {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .banner_text_2 .number {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .about_section_2 {
+    width: 100%;
+    height: 300px;
+  }
+  .banner_text_2 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about_section {
+    height: 950px;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card .card_text p {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 18px;
+  }
+  .card .card_text .about_btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  .banner_text_2 .icon {
+    font-size: 28px;
+  }
+  .banner_text_2 .name {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .banner_text_2 .number {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .about_section_2 {
+    width: 100%;
+    height: 300px;
+  }
+  .banner_text_2 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about_section {
+    height: 1300px;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 150px;
+  }
+
+  .card .card_text p {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 18px;
+  }
+  .card .card_text .about_btn {
+    padding: 8px 20px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+  }
+}

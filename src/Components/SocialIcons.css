@@ -1,0 +1,111 @@
+.Social_Icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #ece7e7;
+  /* background-color: aliceblue; */
+  padding: 10px;
+  border-radius: 10px;
+}
+.icon {
+  font-size: 20px;
+  /* color: rgb(255, 255, 255); */
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50px;
+}
+.icon:hover {
+  color: #042cf2;
+}
+.toggle_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.Social_Icons .icon:nth-child(2) {
+  position: relative;
+}
+.Social_Icons .icon:nth-child(2):hover {
+  color: #042cf2;
+}
+.Social_Icons .icon:nth-child(2)::after {
+  position: absolute;
+  content: "Facebook";
+  top: 10px;
+  left: -4.5rem;
+  font-size: 12px;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  opacity: 0;
+}
+.Social_Icons .icon:nth-child(2):hover::after {
+  opacity: 1;
+}
+.Social_Icons .icon:nth-child(3):hover {
+  color: green;
+}
+.Social_Icons .icon:nth-child(3) {
+  position: relative;
+}
+.Social_Icons .icon:nth-child(3)::after {
+  position: absolute;
+  content: "WhatsApp";
+  top: 10px;
+  left: -4.5rem;
+  font-size: 12px;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  opacity: 0;
+}
+.Social_Icons .icon:nth-child(3):hover::after {
+  opacity: 1;
+}
+
+.Social_Icons .icon:nth-child(4):hover {
+  color: rgb(217, 66, 24);
+}
+.Social_Icons .icon:nth-child(4) {
+  position: relative;
+}
+.Social_Icons .icon:nth-child(4)::after {
+  position: absolute;
+  content: "Instagram";
+  top: 10px;
+  left: -4.5rem;
+  font-size: 12px;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  opacity: 0;
+}
+.Social_Icons .icon:nth-child(4):hover::after {
+  opacity: 1;
+}
+.Social_Icons .icon:nth-child(5):hover {
+  color: rgb(0, 96, 2);
+}
+.Social_Icons .icon:nth-child(5) {
+  position: relative;
+}
+.Social_Icons .icon:nth-child(5)::after {
+  position: absolute;
+  content: "Email";
+  top: 10px;
+  left: -3rem;
+  font-size: 12px;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 600;
+  opacity: 0;
+}
+.Social_Icons .icon:nth-child(5):hover::after {
+  opacity: 1;
+}

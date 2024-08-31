@@ -1,0 +1,97 @@
+.Navbar {
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+  font-family: Roboto;
+  position: sticky;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.navbar_content {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo_content {
+  text-decoration: none;
+  display: flex;
+}
+.navBar_logo_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.logo_text {
+  display: flex;
+  align-items: end;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.links_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.item a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000;
+  position: relative;
+}
+.item a:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: width 0.3s ease-in;
+}
+.item a:hover::after {
+  width: 60%;
+}
+
+.red {
+  color: #b31f1f !important;
+}
+.Burger_menu {
+  display: none;
+}
+.Burger_menu span {
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px 6px 15px;
+  background-color: #fff;
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .Burger_menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbar_content {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo_text {
+    display: none;
+  }
+}

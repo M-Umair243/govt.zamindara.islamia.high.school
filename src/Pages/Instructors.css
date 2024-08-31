@@ -1,0 +1,139 @@
+.Team_wrapper .Heading {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Roboto;
+  text-align: center;
+}
+.Team_wrapper .Heading h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+}
+.Team_wrapper .Heading p {
+  font-size: 22px;
+  font-weight: 400;
+}
+.Card_d {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Box_wrapper {
+  flex: 0 0 auto;
+  max-width: 265px;
+  position: relative;
+  overflow: none;
+  max-height: 240px;
+  padding-inline: 10px;
+  margin-top: 4rem;
+}
+.Team_Card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Team_wrapper .Box_wrapper .Card {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Team_wrapper .Box_wrapper .Card .bg {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: all 1.1s;
+}
+.Team_wrapper .Box_wrapper .Card .bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.Team_wrapper .Card :hover.bg {
+  transform: scale(1.1);
+}
+.Team_wrapper .Card_overlay {
+  position: absolute;
+  box-shadow: rgba(244, 241, 241, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  bottom: -2.5rem;
+  right: 1.7rem;
+  width: 180px;
+  height: 60px;
+  background: rgba(244, 241, 241, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Poppins;
+}
+.Team_wrapper .Card_overlay h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.Team_wrapper .Card_overlay span {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .Box_wrapper {
+    flex: 0 0 auto;
+    max-width: 20%;
+    width: 100%;
+    max-height: 240px;
+  }
+  .Team_wrapper .Box_wrapper .Card_overlay {
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Box_wrapper {
+    flex: 0 0 auto;
+    max-width: 25%;
+    width: 100%;
+    max-height: 240px;
+  }
+  .Team_wrapper .Box_wrapper .Card_overlay {
+    right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Box_wrapper {
+    flex: 0 0 auto;
+    max-width: 33.33%;
+    width: 100%;
+    max-height: 240px;
+  }
+  .Team_wrapper .Box_wrapper .Card_overlay {
+    right: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Box_wrapper {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    max-height: 300px;
+  }
+  .Team_wrapper .Box_wrapper .Card_overlay {
+    right: 4rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Team_wrapper .Box_wrapper .Card_overlay {
+    right: 3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Team_wrapper .Box_wrapper .Card_overlay {
+    right: 1.3rem;
+  }
+}
